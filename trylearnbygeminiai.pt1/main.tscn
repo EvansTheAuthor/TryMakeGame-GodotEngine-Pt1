@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwhwfvxiffovq"]
+
+[ext_resource type="Texture2D" uid="uid://i5ixt1dmv3gy" path="res://icon.svg" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://g8oa7i0vb31t" path="res://Sprite2d.cs" id="2_0xm2m"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ig7tw")
+script = ExtResource("2_0xm2m")
+
+[node name="Timer" type="Timer" parent="Sprite2D"]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="timeout" from="Sprite2D/Timer" to="Sprite2D" method="OnTimerTimeout"]
