@@ -21,7 +21,9 @@ As a note, .NET/Mono version is supporting you for C# scripting throught .NET/Mo
 
 ## My Initial Try: DVD Animation Copycat
 This is our goal, but we'll use the Godot icon to make it easy for beginner.
+
 ![DVDAnimation](/documentation-assets/dvd-logo.gif)
+
 If you try to check the code, there's no trace since I forgot to commit this initial (heheh, sorry). So, here's the tutorial.
 
 ### Step 1: Create Your Own Project
@@ -29,12 +31,18 @@ I named my project itself as "trylearnbygeminiai.pt1" so name it as you desired.
 
 ### Step 2: Create A Scene
 1. In the Scene dock (Top-Left), click Add (`+`).
+
 ![AddingNewNode](/documentation-assets/AddingNewParentNode.png)
+
 Choose the `2D Scene` button.
+
 ![ChoosingNodeType](/documentation-assets/ChoosingNodeType.png)
+
 This will create a `Node2D` as the root of your scene.
 2. Right-click the `Node2D`
+
 ![RightClickOnNode](/documentation-assets/RightClickOnNode.png)
+
 and select `Add Child Node`.
 3. Search for `Sprite2D` and create it. This node is used to display a 2D image.
 
@@ -42,16 +50,22 @@ and select `Add Child Node`.
 1. Select the `Sprite2D` node int the Scene dock.
 2. In the **Inspector** on the right, you'll see a property called `Texture`.
 3. In the **FileSystem** dock on the bottom-left, you'll see the default `icon.svg`.
+
 ![IconSvgOnRes](/documentation-assets/IconSvgOnrRes.png)
+
 Drag this file onto the `Texture` property slot in the Inspector.
+
 ![TextureOnInspector](/documentation-assets/TextureOnInspector.png)
+
 You should now see the Godot icon in the center of your viewport.
 4. Save your scene by pressing `Ctrl+S` (or C`md+S`). Name it something like `main.tscn`.
 
 ### Step 4: Write The C# Script
 1. Select the `Sprite2D` node again.
 2. In the **Inspector**, check a property called `Script`. Click on dropdown icon.
+
 ![MakeNewScript](/documentation-assets/MakeNewScript.png)
+
 Click `New Script...` to attach a new script.
 3. In the pop-up, set the **Language** to `C#`. The path and name should be fine. Click `Create`.
 4. Write down this script and save it (press `Ctrl + S` or `Cmd + S`):
