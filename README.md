@@ -58,6 +58,7 @@ Drag this file onto the `Texture` property slot in the Inspector.
 ![TextureOnInspector](/documentation-assets/TextureOnInspector.png)
 
 You should now see the Godot icon in the center of your viewport.
+
 4. Save your scene by pressing `Ctrl+S` (or C`md+S`). Name it something like `main.tscn`.
 
 ### Step 4: Write The C# Script
@@ -67,7 +68,9 @@ You should now see the Godot icon in the center of your viewport.
 ![MakeNewScript](/documentation-assets/MakeNewScript.png)
 
 Click `New Script...` to attach a new script.
+
 3. In the pop-up, set the **Language** to `C#`. The path and name should be fine. Click `Create`.
+
 4. Write down this script and save it (press `Ctrl + S` or `Cmd + S`):
 ```
 using Godot;
